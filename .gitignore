@@ -1,12 +1,7 @@
-# Compiled Object files
-*.slo
-*.lo
+*.dSYM
+*.log
 *.o
-
-# Compiled Dynamic libraries
-*.so
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
+*.s
+*~
+.DS_Store
+dnsblast
