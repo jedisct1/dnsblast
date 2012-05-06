@@ -38,6 +38,15 @@ Yes, that's 4 random characters dot com. Doing that achieves a
 NXDOMAIN vs "oh cool, we got a reply" ratio that is surprisingly close
 to the one you get from real queries made by real users.
 
+Oh, and it displays that:
+
+    Sent: [1000] - Received: [799] - Reply rate: [250 pps] - Ratio: [79.90%]
+
+That's the number of packets that have been sent, how many have been
+received (if everything is fine, both values should be the same), how
+fast the server replies, and the ratio between received and sent
+queries.
+
 Different query types are sent. Namely SOA, A, AAAA, MX and TXT, and
 the probability that a query type gets picked is also close to its
 probability in the real world.
