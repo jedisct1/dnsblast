@@ -38,7 +38,7 @@ Yes, that's 4 random characters dot com. Doing that achieves a
 NXDOMAIN vs "oh cool, we got a reply" ratio that is surprisingly close
 to the one you get from real queries made by real users.
 
-Different query types are sent. Namely SOA, A, AAA, MX and TXT, and
+Different query types are sent. Namely SOA, A, AAAA, MX and TXT, and
 the probability that a query type gets picked is also close to its
 probability in the real world.
 
