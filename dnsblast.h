@@ -2,6 +2,8 @@
 #ifndef __DNSBLAST_H__
 #define __DNSBLAST_H__ 1
 
+#define _POSIX_C_SOURCE 200112L
+
 #include <sys/types.h>
 #include <sys/ioctl.h>
 #include <sys/poll.h>
@@ -20,6 +22,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <strings.h>
 #include <time.h>
 
 #include "dns.h"
