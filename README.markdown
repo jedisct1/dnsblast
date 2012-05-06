@@ -80,6 +80,7 @@ How do I use it?
 ----------------
 
 To send a shitload of queries to 127.0.0.1:
+
     dnsblast 127.0.0.1
 
 To send 50,000 queries to 127.0.0.1:
