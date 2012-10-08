@@ -111,5 +111,6 @@ To send malformed packets, prepend "fuzz":
     dnsblast fuzz 127.0.0.1 50000 100
     dnsblast fuzz 127.0.0.1 50000 100 5353
 
-If you think that it desperately cries for `getopt()`, you're absolutely correct.
+If you think that it desperately cries for `getopt()`, you're
+absolutely correct.
 
