@@ -197,7 +197,10 @@ get_sock(const char * const host, const char * const port,
                &(int[]) { MAX_UDP_BUFFER_SIZE }, sizeof (int));
     setsockopt(sock, SOL_SOCKET, SO_SNDBUFFORCE,
                &(int[]) { MAX_UDP_BUFFER_SIZE }, sizeof (int));
-#if defined(IP_MTU_DISCOVER) && defined(IP_PMTUDISC_DONT)
+#if defined(IP_PMTUDISC_OMIT)
+    setsockopt(sock, IPPROTO_IP, IP_MTU_DISCOVER,
+               &(int[]) { IP_PMTUDISC_OMIT }, sizeof (int));
+#elif defined(IP_MTU_DISCOVER) && defined(IP_PMTUDISC_DONT)
     setsockopt(sock, IPPROTO_IP, IP_MTU_DISCOVER,
                &(int[]) { IP_PMTUDISC_DONT }, sizeof (int));
 #elif defined(IP_DONTFRAG)
