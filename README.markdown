@@ -62,7 +62,7 @@ the `rand()` function with a fixed seed.
 What it does not:
 -----------------
 
-It doesn't support DNSSec, it doesn't send anything using TCP, it
+It doesn't support DNSSEC, it doesn't send anything using TCP, it
 doesn't pay attention to the content the resolver sents.
 
 Fuzzing:
