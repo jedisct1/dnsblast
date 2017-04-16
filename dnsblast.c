@@ -351,15 +351,15 @@ main(int argc, char *argv[])
     if (argc > 4) {
         port = argv[4];
     }
-    if ((sock = get_sock(host, port, &ai)) == -1) {
-        perror("Oops");
-        exit(EXIT_FAILURE);
-    }
-    init_context(&context, sock, ai, fuzz);
-    context.pps = pps;
-    srand(0U);
-    assert(send_count > 0UL);
     do {
+	if ((sock = get_sock(host, port, &ai)) == -1) {
+	    perror("Oops");
+	    exit(EXIT_FAILURE);
+	}
+	init_context(&context, sock, ai, fuzz);
+	context.pps = pps;
+	srand(0U);
+	assert(send_count > 0UL);
         if (rand() > REPEATED_NAME_PROBABILITY) {
             get_random_name(name, sizeof name);
         }
